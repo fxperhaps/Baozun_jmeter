@@ -44,7 +44,7 @@ public class DubboTest extends AbstractJavaSamplerClient {
 		end = System.currentTimeMillis();
 		getNewLogger().info("cost time: " + (end - start) + "ms");
 		
-		if(null != context){
+		if(null != appcontext){
 			appcontext.destroy();
 		}
 	}
